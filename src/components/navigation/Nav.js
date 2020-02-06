@@ -104,7 +104,7 @@ const MyNavbar = ()=>{
 <br/> */}
   <Navbar bg="light" variant="light"  sticky="top">
   <Navbar.Brand>
-  <div className="nav-depart">
+  <div className="nav-depart ">
                 <div className="depart-btn row">
                     
                     
@@ -125,15 +125,16 @@ const MyNavbar = ()=>{
                  </div>
              </div>
   </Navbar.Brand>
-  <Nav className="mr-auto">
+ 
+  <Form inline className="nav-depart   ">
+    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+    <Button variant="outline-primary">Search</Button>
+  </Form>
+  <Nav className="mr-auto ml-5 " defaultActiveKey="#home">
     <Nav.Link href="#home">Home</Nav.Link>
     <Nav.Link href="#features">Products</Nav.Link>
     <Nav.Link href="#pricing">Profile</Nav.Link>
   </Nav>
-  <Form inline>
-    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-    <Button variant="outline-primary">Search</Button>
-  </Form>
 </Navbar>
 </>
     )
